@@ -1,0 +1,95 @@
+body {
+	font-family: $font-family;
+	color: $color-black;
+}
+
+img {
+	max-width: 100%;
+}
+
+.container {
+	padding-right: 10px;
+	padding-left: 10px;
+
+	@include mq() {
+		margin-left: auto;
+		margin-right: auto;
+		max-width: 720px;
+		padding-right: 0px;
+		padding-left: 0px;
+	}
+
+	@include mq("desktop") {
+		max-width: $max-width;
+	}
+}
+
+.icon {
+	display: inline-block;
+	width: 1em;
+	height: 1em;
+	stroke-width: 0;
+	stroke: currentColor;
+	fill: currentColor;
+}
+
+.icon-menu {
+	font-size: 1.9em;
+}
+
+.icon-fb,
+.icon-insta,
+.icon-linkedin,
+.icon-twitter,
+.icon-github,
+.icon-gitlab {
+	font-size: 1.9em;
+}
+
+.icon-fb:hover {
+	color: #3B5998;
+}
+
+.icon-insta:hover {
+	color: #7232bd;
+}
+
+.icon-twitter:hover {
+	color: #1da1f2;
+}
+
+.icon-linkedin:hover {
+	color: #0a66c2;
+}
+
+.icon-github:hover {
+	color: #4078c0;
+}
+
+.icon-gitlab:hover {
+	color: #fc6d26;
+}
+
+.button {
+	background-color: transparent;
+	cursor: pointer;
+	outline: none;
+}
+
+.button-primary {
+	height: $finger-size;
+	padding: 10px 20px;
+	background-color: $color-primary;
+	font-size: 1.25em;
+	color: #fff;
+	border-radius: $border-radius;
+
+	&:hover {
+		background-color: rgba($color-primary, .8);
+		transition: .30s;
+	}
+
+	@include mq() {
+		font-weight: 500;
+	}
+}

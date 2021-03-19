@@ -1,0 +1,17 @@
+{% layout "master" %}
+
+{% block content %}
+
+{% include "page-header" with title: "Blog" %}
+
+<section class="blog blog-list">
+	<div class="container">
+		<div class="blog-card-wrapper">
+			{% for i in (1..10) %}
+				{% include "blog-card" %}
+			{% endfor %}
+		</div>
+	</div>
+</section>
+
+{% endblock %}

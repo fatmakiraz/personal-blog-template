@@ -1,0 +1,18 @@
+{% layout "master" %}
+
+{% block content %}
+
+{% include "page-header" with title: "Works" %}
+
+<section class="featured">
+	<div class="container">
+		<div class="featured-wrapper">
+			{% for i in (1..3) %}
+				{% include "featured-card" with image: "img/photo-sect-1.png" title: "Let's Learn Illustration" category: "Illustration" %}
+				{% include "featured-card" with image:"img/photo-sect-2.png" title: "Let's Learn Illustration" category: "Illustration" %}
+			{% endfor %}
+		</div>
+	</div>
+</section>
+
+{% endblock %}

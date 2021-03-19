@@ -1,0 +1,43 @@
+.blog-card {
+	background-color: #fff;
+	padding: 12px $offset $offset-top-bottom;
+	display: flex;
+	flex-direction: column;
+	border-radius: $border-radius-card;
+	box-shadow: 0 4px 10px rgba(#bbe1fa, .25);
+
+	&-title {
+		font-size: 1.4em;
+		font-weight: bold;
+		line-height: 1.4;
+		margin-bottom: 12px;
+
+		@include mq() {
+			font-size: 1.63em;
+		}
+	}
+
+	&-type {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		margin-bottom: 19px;
+
+		&-item {
+
+			@include mq() {
+				font-size: 1.13em;
+			}
+
+			&+& {
+				padding-left: $offset;
+				margin-left: $offset;
+				border-left: 1px solid;
+			}
+		}
+	}
+
+	&-content {
+		line-height: 1.5;
+	}
+}

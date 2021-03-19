@@ -1,0 +1,17 @@
+@import "config/variables.scss";
+@import "config/mixin.scss";
+
+@import "helper/normalize.scss";
+@import "helper/formalize.scss";
+@import "helper/global.scss"; 
+
+@import "global/header.scss";
+@import "global/footer.scss";
+
+@import "components/blog-card.scss";
+@import "components/featured-card.scss";
+@import "components/page-header.scss";
+@import "components/blog-meta.scss";
+
+@import "pages/index.scss";
+@import "pages/blog-detail.scss";

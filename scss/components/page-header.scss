@@ -1,0 +1,16 @@
+.page-header {
+	margin-bottom: 30px;
+
+	@include mq() {
+		margin-bottom: 55px;
+	}
+
+	&-title {
+		text-align: center;
+		font-size: 1.87em;
+
+		@include mq() {
+			font-size: 2.75em;
+		}
+	}
+}

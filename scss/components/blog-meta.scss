@@ -1,0 +1,31 @@
+.featured-card-content-detail {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin-bottom: 20px;
+
+	&-date {
+		background-color: #142850;
+		font-weight: bold;
+		color: #fff;
+		padding: 3.7px 12.5px;
+		border-radius: 16px;
+
+		@include mq() {
+			font-size: 1.13em;
+		}
+	}
+
+	&-title {
+		color: $color-light;
+
+		@include mq() {
+			font-size: 1.25em;
+		}
+
+	}
+
+	&-info+&-info {
+		margin-left: $offset;
+	}
+}

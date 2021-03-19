@@ -1,0 +1,43 @@
+{% layout "master" %}
+
+{% block content %}
+
+<section class="hero">
+	<div class="container">
+		<div class="hero-wrapper">
+			<div class="hero-photo">
+				<img src="img/profile.png" alt="Profile">
+			</div>
+			<div class="hero-content">
+				<h1 class="hero-content-title">Hi, I am John,<br> Creative Technologist</h1>
+				<p class="hero-content-explanation">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+				<button class="hero-content-button-resume button button-primary">Download Resume</button>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="blog">
+	<div class="container">
+		<div class="blog-title">
+			<div class="blog-title-title">Recent posts</div>
+			<a href="blog-list.html" class="blog-title-link">View all</a>
+		</div>
+		<div class="blog-card-wrapper">
+			{% for i in (1..2) %}
+				{% include "blog-card" %}
+			{% endfor %}
+		</div>
+	</div>
+</section>
+
+<section class="featured">
+	<div class="container">
+		<div class="featured-title">Featured Works</div>
+		<div class="featured-wrapper">
+			{% include "featured-card" with title:"Vibrant Portraits of 2021",image:"img/photo-sect-1.png",category:"Content Management" %}
+			{% include "featured-card" with title:"36 Days of Malayalam type",image:"img/photo-sect-2.png",category:"Typography" %}
+		</div>
+</section>
+
+{% endblock %}

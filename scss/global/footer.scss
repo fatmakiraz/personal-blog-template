@@ -1,0 +1,25 @@
+.footer {
+	padding: 52px 42px;
+	display: flex;
+	flex-direction: column;
+
+	@include mq() {
+		padding: 56px 0px;
+	}
+
+	&-social-icon {
+		display: flex;
+		justify-content: center;
+		margin-bottom: 26px;
+
+
+		&-item+&-item {
+			margin-left: 15px;
+		}
+	}
+
+	&-rights {
+		font-size: .88em;
+		text-align: center;
+	}
+}

@@ -1,0 +1,46 @@
+.blog-detail {
+	padding-right: 3px;
+	padding-left: 8px;
+
+	@include mq() {
+		padding-right: 0px;
+		padding-left: 0px;
+	}
+
+	&-title {
+		margin-bottom: 24px;
+		line-height: 1.33em;
+		font-size: 1.7em;
+
+		@include mq() {
+			line-height: 1.57em;
+			font-size: 2em;
+		}
+
+	}
+
+	.wysiwyg {
+		p {
+			line-height: 1.5;
+			margin-bottom: 24px;
+		}
+
+		img {
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			margin-bottom: 24px;
+		}
+
+		h2 {
+			margin-bottom: 20px;
+		}
+
+		ul {
+			list-style: disc;
+			padding-inline-start: 2.5em;
+			line-height: 1.5;
+			margin-bottom: 20px;
+		}
+	}
+}

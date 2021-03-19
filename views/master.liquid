@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Personal Blog</title>
+	<meta name="description" content="Personal Blog">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+	<svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+		<defs>
+			<symbol id="icon-menu" viewBox="0 0 48 32">
+				<path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2.56" d="M-0.417 1.35h48.833"></path>
+				<path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2.56" d="M-0.417 16h48.833"></path>
+				<path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2.56" d="M-0.417 30.65h48.833"></path>
+			</symbol>
+			<symbol id="icon-twitter" viewBox="0 0 39 32">
+				<path d="M39.385 3.788c-1.465 0.642-3.025 1.068-4.652 1.275 1.674-0.999 2.951-2.57 3.552-4.463-1.561 0.93-3.284 1.588-5.12 1.954-1.482-1.578-3.594-2.555-5.898-2.555-4.47 0-8.069 3.628-8.069 8.076 0 0.64 0.054 1.255 0.187 1.841-6.713-0.327-12.652-3.545-16.642-8.446-0.697 1.209-1.105 2.592-1.105 4.081 0 2.796 1.44 5.275 3.586 6.71-1.297-0.025-2.57-0.401-3.648-0.994 0 0.025 0 0.057 0 0.089 0 3.924 2.799 7.183 6.469 7.934-0.657 0.18-1.374 0.266-2.117 0.266-0.517 0-1.039-0.030-1.529-0.138 1.046 3.198 4.015 5.548 7.545 5.625-2.747 2.149-6.235 3.444-10.011 3.444-0.662 0-1.297-0.030-1.932-0.111 3.577 2.306 7.815 3.623 12.386 3.623 14.858 0 22.981-12.308 22.981-22.976 0-0.357-0.012-0.702-0.030-1.044 1.602-1.137 2.949-2.558 4.047-4.192z"></path>
+			</symbol>
+			<symbol id="icon-linkedin" viewBox="0 0 32 32">
+				<path d="M27.313 0h-22.625c-2.584 0-4.688 2.103-4.688 4.688v22.625c0 2.584 2.103 4.687 4.688 4.687h22.625c2.584 0 4.687-2.103 4.687-4.687v-22.625c0-2.584-2.103-4.688-4.687-4.688zM11.313 25.375h-3.75v-13.125h3.75v13.125zM11.313 10.375h-3.75v-3.75h3.75v3.75zM24.438 25.375h-3.75v-7.5c0-1.034-0.841-1.875-1.875-1.875s-1.875 0.841-1.875 1.875v7.5h-3.75v-13.125h3.75v0.707c0.982-0.305 1.621-0.707 2.812-0.707 2.543 0.003 4.688 2.284 4.688 4.98v8.145z"></path>
+			</symbol>
+			<symbol id="icon-insta" viewBox="0 0 32 32">
+				<path d="M23.169 0h-14.338c-4.869 0-8.831 3.962-8.831 8.831v14.338c0 4.869 3.961 8.831 8.831 8.831h14.338c4.87 0 8.831-3.962 8.831-8.831v-14.338c0-4.869-3.961-8.831-8.831-8.831zM29.161 23.169c0 3.304-2.688 5.992-5.992 5.992h-14.339c-3.304 0-5.991-2.688-5.991-5.992v-14.338c0-3.304 2.688-5.992 5.991-5.992h14.338c3.304 0 5.992 2.688 5.992 5.992v14.338h0z"></path>
+				<path d="M16 7.755c-4.547 0-8.246 3.699-8.246 8.246s3.699 8.245 8.246 8.245 8.246-3.699 8.246-8.245c0-4.547-3.699-8.246-8.246-8.246zM16 21.406c-2.981 0-5.406-2.425-5.406-5.406s2.425-5.406 5.406-5.406 5.406 2.425 5.406 5.406c0 2.981-2.425 5.406-5.406 5.406z"></path>
+				<path d="M24.591 5.347c-0.547 0-1.084 0.221-1.471 0.609-0.388 0.386-0.611 0.924-0.611 1.473 0 0.547 0.223 1.085 0.611 1.473 0.386 0.386 0.924 0.609 1.471 0.609 0.549 0 1.085-0.223 1.473-0.609 0.388-0.388 0.61-0.926 0.61-1.473 0-0.549-0.221-1.086-0.61-1.473-0.386-0.388-0.924-0.609-1.473-0.609z"></path>
+			</symbol>
+			<symbol id="icon-fb" viewBox="0 0 32 32">
+				<path d="M27.313 0h-22.625c-2.584 0-4.688 2.103-4.688 4.688v22.625c0 2.584 2.103 4.687 4.688 4.687h9.438v-11.313h-3.75v-5.625h3.75v-3.812c0-3.102 2.523-5.625 5.625-5.625h5.688v5.625h-5.688v3.812h5.688l-0.938 5.625h-4.75v11.313h7.563c2.584 0 4.687-2.103 4.687-4.687v-22.625c0-2.584-2.103-4.688-4.687-4.688z"></path>
+			</symbol>
+			<symbol id="icon-github" viewBox="0 0 32 32">
+				<path d="M16 0.395c-8.836 0-16 7.163-16 16 0 7.069 4.585 13.067 10.942 15.182 0.8 0.148 1.094-0.347 1.094-0.77 0-0.381-0.015-1.642-0.022-2.979-4.452 0.968-5.391-1.888-5.391-1.888-0.728-1.849-1.776-2.341-1.776-2.341-1.452-0.993 0.11-0.973 0.11-0.973 1.606 0.113 2.452 1.649 2.452 1.649 1.427 2.446 3.743 1.739 4.656 1.33 0.143-1.034 0.558-1.74 1.016-2.14-3.554-0.404-7.29-1.777-7.29-7.907 0-1.747 0.625-3.174 1.649-4.295-0.166-0.403-0.714-2.030 0.155-4.234 0 0 1.344-0.43 4.401 1.64 1.276-0.355 2.645-0.532 4.005-0.539 1.359 0.006 2.729 0.184 4.008 0.539 3.054-2.070 4.395-1.64 4.395-1.64 0.871 2.204 0.323 3.831 0.157 4.234 1.026 1.12 1.647 2.548 1.647 4.295 0 6.145-3.743 7.498-7.306 7.895 0.574 0.497 1.085 1.47 1.085 2.963 0 2.141-0.019 3.864-0.019 4.391 0 0.426 0.288 0.925 1.099 0.768 6.354-2.118 10.933-8.113 10.933-15.18 0-8.837-7.164-16-16-16z"></path>
+			</symbol>
+			<symbol id="icon-gitlab" viewBox="0 0 28 28">
+				<path d="M1.625 11.031l12.375 15.859-13.563-9.844c-0.375-0.281-0.531-0.766-0.391-1.203l1.578-4.813zM8.844 11.031h10.313l-5.156 15.859zM5.75 1.469l3.094 9.562h-7.219l3.094-9.562c0.172-0.484 0.859-0.484 1.031 0zM26.375 11.031l1.578 4.813c0.141 0.438-0.016 0.922-0.391 1.203l-13.563 9.844 12.375-15.859zM26.375 11.031h-7.219l3.094-9.562c0.172-0.484 0.859-0.484 1.031 0z"></path>
+			</symbol>
+		</defs>
+	</svg>
+
+	<header class="header">
+		<div class="container">
+			<div class="header-menu">
+				<button aria-label="hamburger menu" type="button" class="header-menu-switch js-toggle-mobile-menu button">
+					<svg class="icon icon-menu">
+						<use xlink:href="#icon-menu"></use>
+					</svg>
+				</button>
+				<nav class="header-menu-title">
+					<a href="index.html" class="header-menu-title-item is-active">Home</a>
+					<a href="work-list.html" class="header-menu-title-item">Works</a>
+					<a href="blog-list.html" class="header-menu-title-item">Blog</a>
+					<a href="mailto:test@test.com" class="header-menu-title-item">Contact</a>
+				</nav>
+			</div>
+		</div>
+	</header>
+
+	<main class="main">
+		{% block content %}
+		{% endblock %}
+	</main>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="footer-social-icon">
+				<a title="facebook" href="#" class="footer-social-icon-item">
+					<svg class="icon icon-fb">
+						<use xlink:href="#icon-fb"></use>
+					</svg>
+				</a>
+				<a title="instagram" href="#" class="footer-social-icon-item">
+					<svg class="icon icon-insta">
+						<use xlink:href="#icon-insta"></use>
+					</svg>
+				</a>
+				<a title="twitter" href="#" class="footer-social-icon-item">
+					<svg class="icon icon-twitter">
+						<use xlink:href="#icon-twitter"></use>
+					</svg>
+				</a>
+				<a title="linkedin" href="#" class="footer-social-icon-item">
+					<svg class="icon icon-linkedin">
+						<use xlink:href="#icon-linkedin"></use>
+					</svg>
+				</a>
+				<a title="linkedin" href="#" class="footer-social-icon-item">
+					<svg class="icon icon-github">
+						<use xlink:href="#icon-github"></use>
+					</svg>
+				</a>
+				<a title="linkedin" href="#" class="footer-social-icon-item">
+					<svg class="icon icon-gitlab">
+						<use xlink:href="#icon-gitlab"></use>
+					</svg>
+				</a>
+			</div>
+			<p class="footer-rights">Copyright ©2021 All rights reserved.</p>
+		</div>
+	</footer>
+
+	<script src="js/main.js"></script>
+</body>
+
+</html>

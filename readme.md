@@ -8,7 +8,7 @@ Personal Blog Template is a HTML/ CSS template including hero, works and blog se
 - Work List
 - Blog Detail
 
-## [Demo website](https://personel-blog-template.vercel.app/)
+## [Demo website](https://personal-blog-template.vercel.app/)
 
 # Project Structure
 
@@ -22,7 +22,7 @@ Files in the views/pages folder are extended from the file called views/master.l
 ## Installation
 
 ```bash
-git clone https://github.com/hey-fk/personel-blog-template
+git clone https://github.com/hey-fk/personal-blog-template
 cd personal-blog-template
 npm install or yarn install
 ```
@@ -57,7 +57,7 @@ dist
 
 ## Contributing
 
-Did you found a bug or got an idea for a new feature? Feel free to use the [issue tracker](https://github.com/hey-fk/personel-blog-template/issues) to let me know. Or make directly a [pull request](https://github.com/hey-fk/personel-blog-template/pulls).
+Did you found a bug or got an idea for a new feature? Feel free to use the [issue tracker](https://github.com/hey-fk/personal-blog-template/issues) to let me know. Or make directly a [pull request](https://github.com/hey-fk/personal-blog-template/pulls).
 
 ## Credits
 

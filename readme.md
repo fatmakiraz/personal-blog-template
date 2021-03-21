@@ -8,7 +8,7 @@ Personal Blog Template is a HTML/ CSS template including hero, works and blog se
 - Work List
 - Blog Detail
 
-## [Demo website](https://personal-blog-template.vercel.app/)
+## [Demo website](https://personal-ui-blog-template.vercel.app/)
 
 # Project Structure
 

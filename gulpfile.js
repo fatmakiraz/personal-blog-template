@@ -46,7 +46,7 @@ gulp.task('html', () => {
     .on('end', reload)
 })
 
-gulp.task('default', gulp.series('browser-sync', 'html', 'css'))
+gulp.task('default', gulp.series('html', 'css', 'browser-sync'))
 
 
 gulp.task('dist-css', () => {

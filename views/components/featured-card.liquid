@@ -1,13 +1,17 @@
-<div class="featured-card">
-	<a title="{{title}}" href="blog-detail.html" class="featured-card-photo">
-		<img src="{{image}}" alt="{{title}}">
-	</a>
+<article class="featured-card">
+	<figure class="featured-card-photo">
+		<a title="{{title}}" href="blog-detail.html">
+			<picture>
+				<img src="{{image}}" alt="{{title}}">
+			</picture>
+		</a>
+	</figure>
 	<div class="featured-card-content">
 		<a title="{{title}}" href="blog-detail.html" class="featured-card-content-main-title">
 			{{title}}
 		</a>
-		{% include "blog-meta" with date: "2021" %}
+		{% include "featured-meta" with date: "2021" %}
 		<p class="featured-card-content-explanation">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
 		</p>
 	</div>
-</div>
+</article>

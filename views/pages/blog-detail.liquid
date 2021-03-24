@@ -2,10 +2,12 @@
 
 {% block content %}
 
-<section class="blog-detail">
+<article class="blog-detail">
 	<div class="container">
-		<h1 class="blog-detail-title">Designing Dashboards with usability in mind</h1>
-		{% include "blog-meta" with date: "2021" category: "Customer Management System" %}
+		<header>
+			<h1 class="blog-detail-title">Designing Dashboards with usability in mind</h1>
+			{% include "featured-meta" with date: "2021" category: "Customer Management System" %}
+		</header>
 		<div class="wysiwyg">
 			<p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
 			<img src="img/photo-sect-1.png" alt="Blog Fotoğrafı">
@@ -22,6 +24,6 @@
 			</ul>
 		</div>
 	</div>
-</section>
+</article>
 
 {% endblock %}
